@@ -10,6 +10,10 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /*Part of sol*/
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 
 /* do not edit this footer */
@@ -24,3 +28,27 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/*Part of sol*/
+.row1,
+.row2{
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.row2{
+  flex-wrap: wrap;
+}
+
+.text,
+.img{
+  width: 200px;
+}
+
+.img{
+  height: auto;
+}
+
+
+
