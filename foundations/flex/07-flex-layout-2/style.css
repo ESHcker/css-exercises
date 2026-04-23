@@ -5,7 +5,6 @@ body {
 }
 
 .header {
-  height: 72px;
   background: darkmagenta;
   color: white;
 }
@@ -26,4 +25,68 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/*My sol*/
+body{
+  display:flex;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  flex: 1;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-basis: 300px;
+}
+
+.sidebar ul li{
+  list-style-type: none;
+  size: 24px;
+  padding: 7px;
+}
+
+.sidebar ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.sidebar ul{
+  padding-left: 10px;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 10px;
+}
+
+.card{
+  width: 250px;
+  padding: 10px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  height: auto;
+  padding: 20px;
 }
